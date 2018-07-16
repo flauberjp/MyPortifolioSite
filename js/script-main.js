@@ -1,4 +1,4 @@
-$('.responsive').slick({
+$('.slich-carousel').slick({
   arrows: false,
   autoplay: true,
   dots: true,
@@ -33,24 +33,12 @@ $('.responsive').slick({
   ]
 });
 
-$('.filtering').slick({
-  slidesToShow: 4,
-  slidesToScroll: 4
-});
 
-var filtered = false;
+function doSomething(value) {
+  console.log(value);
 
-$('.js-filter').on('click', function(){
-  console.log($(this).selectedValue );
-  /*
-  if (filtered === false) {
-    $('.filtering').slick('slickFilter',':even');
-    
-    filtered = true;
-  } else {
-    $('.filtering').slick('slickUnfilter');
-    $(this).text('Filter Slides');
-    filtered = false;
+  $('.slich-carousel').slick('slickUnfilter');
+  if (value !== 'allExperiences') {    
+    $('.slich-carousel').slick('slickFilter','.' + value);
   }
-  */
-});
+};
