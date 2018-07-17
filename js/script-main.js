@@ -2,9 +2,9 @@
 $('.slich-carousel').slick({
   arrows: false,
   autoplay: true,
-  dots: true,
+  dots: false,
   infinite: false,
-  speed: 300,
+  speed: 100,
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
@@ -55,11 +55,13 @@ $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (eve
 });
 // Play a movie or show a picture in modal when opened
 $(document).on('click', '.movie-tile', function (event) {
+  $("#movie-storyline-container").empty();
   var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
   var imgSrc = $(this).attr('data-image-src')
   if (!!imgSrc) {
-    $("#trailer-video-container").empty().append($("<img></img>", {
-      'src': imgSrc
+    $("#movie-storyline-container").append($("<img></img>", {
+      'src': imgSrc,
+      'class': 'img-fluid experienceImageLink'
     }));
   } else {
     var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
@@ -72,5 +74,5 @@ $(document).on('click', '.movie-tile', function (event) {
   }
   
   $("#movie-title-container").empty().append($(this).attr('data-movie-title'));
-  $("#movie-storyline-container").empty().append($(this).attr('data-movie-storyline'));
+  $("#movie-storyline-container").append($(this).attr('data-movie-storyline'));
 });

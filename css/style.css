@@ -1,3 +1,44 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+div.title {
+    left: 0;
+    padding: 23px;
+}
+
+@media screen and (min-width: 460px) {
+    div.title {
+        font-size: 40px;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    div.title {
+        font-size: 60px;
+    }
+}
+
+div.filtro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img.introductionImageLink, img.experienceImageLink {
+    float:left;
+}
+
+@media screen and (min-width: 768px) {
+    img.introductionImageLink {
+        float:right;
+    }
+}
+
+span > h3 { display: inline-block; }
+
+
 /* Used in slick.js carousel, see [9]  */
 .slick-dots li {
     position: relative;
