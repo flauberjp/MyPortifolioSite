@@ -63,7 +63,14 @@ $(document).on('click', '.movie-tile', function (event) {
       'src': imgSrc,
       'class': 'img-fluid experienceImageLink'
     }));
+    if (!document.styleSheets[document.styleSheets.length - 1].rules[0].selectorText.includes('#trailer-video-container')) {
+      document.styleSheets[document.styleSheets.length - 1].insertRule("#trailer-video-container {display: none;}", 0);
+    }
   } else {
+    console.log(document.styleSheets[document.styleSheets.length - 1].rules[0]);
+    if (document.styleSheets[document.styleSheets.length - 1].rules[0].selectorText.includes('#trailer-video-container')) {
+       document.styleSheets[document.styleSheets.length - 1].deleteRule(0);
+    }
     var sourceUrl = 'https://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
     $("#trailer-video-container").empty().append($("<iframe></iframe>", {
       'id': 'trailer-video',
