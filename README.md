@@ -12,3 +12,7 @@ Refereces:
 7. Is there an onSelect event or equivalent for HTML <select>?. URL: < https://stackoverflow.com/questions/647282/is-there-an-onselect-event-or-equivalent-for-html-select >. Accessed by Jul, 2018;
 8. JQuery .filter(). URL: < http://api.jquery.com/filter/ >. Accessed by Jul, 2018;
 9. slick.js carousel how to remove numbers from slick-dots. URL: < https://stackoverflow.com/questions/39765546/slick-js-carousel-how-to-remove-numbers-from-slick-dots >. Accessed by Jul, 2018;
+10. JavaScript String includes() Method. URL: < https://www.w3schools.com/jsref/jsref_includes.asp >. Accessed by Jul, 2018;
+11. JavaScript String includes() Method. URL: < https://www.w3schools.com/jsref/jsref_includes.asp >. Accessed by Jul, 2018;
+12. Access last logged value in Chrome console. URL: < https://stackoverflow.com/questions/15895579/access-last-logged-value-in-chrome-console >. Accessed by Jul, 2018; and
+13. Modifying CSS class property values on the fly with JavaScript / jQuery. URL: < https://stackoverflow.com/questions/7125453/modifying-css-class-property-values-on-the-fly-with-javascript-jquery >. Accessed by Jul, 2018;
